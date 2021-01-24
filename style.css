@@ -33,6 +33,7 @@ body {
 }
 
 .container {
+  width: 700px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
