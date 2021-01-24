@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="daysContainer">
+        <h4></h4>
+        <span></span>
+      </div>
+      <div class="clockContainer">
+        <h3>00:00</h3>
+      </div>
+      <form class="js-form form">
+        <input type="text" placeholder="이름을 알려주세요!" />
+      </form>
+      <h4 class="js-greeting greeting"></h4>
+      <div class="toDoContainer">
+        <form class="TaskForm js-TaskForm">
+          <input type="text" placeholder="일정을 추가해 주세요" />
+        </form>
+        <div class="toDoList">
+          <ul class="pendingList js-pendingList"></ul>
+          <ul class="finishedList js-finishedList"></ul>
+        </div>
+      </div>
+    </div>
+    <span class="weather js-weather"></span>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todos.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

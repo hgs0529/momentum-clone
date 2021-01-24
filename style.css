@@ -1,0 +1,154 @@
+@import "reset.css";
+
+.invisible {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 80px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.done {
+  display: none;
+}
+
+.clockContainer h3 {
+  font-size: 200px;
+  margin-bottom: 50px;
+}
+
+.daysContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 50px;
+}
+
+.daysContainer span {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.weather {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+
+.greeting {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.toDoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  margin-bottom: 20px;
+  outline: none;
+  background: transparent;
+  width: 300px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  border: none;
+  border-bottom: #fff solid 1px;
+  color: #fff;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.toDoList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+.toDoList ul {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+li {
+  margin-top: 10px;
+}
+
+li button {
+  background: transparent;
+  border: none;
+  outline: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+li button:first-child {
+  transform: translateX(12px);
+}
+
+li button:last-child {
+  transform: translateX(-12px);
+}
+
+li button:hover {
+  transform: none;
+  opacity: 1;
+}
+
+li span {
+  font-size: 25px;
+}
+
+.finishedList li {
+  text-decoration-line: line-through;
+  color: rgba(0, 0, 0, 0.2);
+}
